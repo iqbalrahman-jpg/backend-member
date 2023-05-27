@@ -23,6 +23,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/beranda', index);
 app.use('/users', users);
 app.use('/akun', akun);
 app.use('/akun/{id}', akun);
